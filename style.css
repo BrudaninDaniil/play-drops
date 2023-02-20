@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+}
+
+.main_back {
+    height: 100vh;
+    width: 100vw; 
+    background-image: linear-gradient(to bottom, rgb(117, 161, 212), rgb(209, 218, 219));
+    display: flex;
+    justify-content: center;
+    animation-name: mainBack;
+    transition-duration: 5s;
+    animation-duration: 13s;
+    animation-iteration-count:infinite;
+    
+}
+
+.item {
+    width: 50px;
+    height: 120px;
+    border: 1px solid rgb(250, 250, 250);
+    margin: 0px 50px;
+    border-radius: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px 10px rgb(204, 204, 204);
+    transform: translate(0px, 0px);
+    animation-name: fallItems;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.item:hover {
+    animation-play-state:paused;
+}
+
+.item2 {
+    transform: translate(0px, -200px);
+    animation-name: fallItems2;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    
+}
+.item2:hover {
+    animation-play-state:paused;
+}
+
+.item3 {
+    transform: translate(0px, -100px);
+    animation-name: fallItems3;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    
+}
+.item3:hover {
+    animation-play-state:paused;
+}
+
+.col1 {
+    background-color: rgb(255, 255, 255);
+}
+.col1:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.col2 {
+    background-color: rgb(255, 255, 255);
+}
+.col2:hover {
+    background-color: rgb(207, 212, 238);
+}
+
+.col3 {
+    background-color: rgb(255, 255, 255);
+}
+.col3:hover {
+    background-color: rgb(217, 255, 0);
+}
+
+.colOne {
+    background-color: rgb(255, 255, 255);
+}
+.colOne:hover {
+    background-color: black;
+}
+
+
+
+
+@keyframes mainBack {
+    from {
+        background-image: linear-gradient(to bottom, rgb(196, 224, 255), rgb(209, 218, 219));
+    }
+    10% {
+        background-image: linear-gradient(to bottom, rgb(166, 186, 250), rgb(209, 218, 219));
+    }
+    20% {
+        background-image: linear-gradient(to bottom, rgb(121, 181, 253), rgb(209, 218, 219));
+    }
+    30% {
+        background-image: linear-gradient(to bottom, rgb(2, 145, 202), rgb(209, 218, 219));
+    }
+    40% {
+        background-image: linear-gradient(to bottom, rgb(53, 242, 255), rgb(209, 218, 219));
+    }
+    50% {
+        background-image: linear-gradient(to bottom, rgb(35, 137, 168), rgb(209, 218, 219));
+    }
+    60% {
+        background-image: linear-gradient(to bottom, rgb(60, 89, 216), rgb(209, 218, 219));
+    }
+    70% {
+        background-image: linear-gradient(to bottom, rgb(54, 52, 189), rgb(209, 218, 219));
+    }
+    80% {
+        background-image: linear-gradient(to bottom, rgb(17, 13, 204), rgb(209, 218, 219));
+    }
+    90% {
+        background-image: linear-gradient(to bottom, rgb(99, 134, 230), rgb(209, 218, 219));
+    }
+    to {
+        background-image: linear-gradient(to bottom, rgb(130, 140, 238), rgb(209, 218, 219));
+    }
+}
+
+@keyframes fallItems {
+    from {
+        transform: translate(0px, 0px);
+    }
+    to {
+        transform: translate(0px, 1200px);
+    }
+}
+
+@keyframes fallItems2 {
+    from {
+        transform: translate(0px, -1000px);
+    }
+    to {
+        transform: translate(0px, 400px);
+    }
+}
+
+@keyframes fallItems3 {
+    from {
+        transform: translate(0px, -2000px);
+    }
+    to {
+        transform: translate(0px, 100px);
+    }
+}
