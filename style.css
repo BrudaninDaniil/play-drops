@@ -9,34 +9,53 @@
     display: flex;
     justify-content: center;
     animation-name: mainBack;
-    transition-duration: 5s;
     animation-duration: 13s;
     animation-iteration-count:infinite;
     
 }
 
+.main {
+    height: 800px;
+    width: 1440px;
+    margin: 200px 0px;
+    border: 2px solid rgb(255, 255, 255);
+    border-left:none;
+    border-right: none;
+    box-shadow: 0px 0px 20px 12px white;
+    background-image: url(2.jpg);
+    filter: opacity(90%);
+    display: flex;
+    overflow:hidden;
+    
+}
+
 .item {
     width: 50px;
-    height: 120px;
+    height: 40px;
     border: 1px solid rgb(250, 250, 250);
-    margin: 0px 50px;
+    margin: 10px 70px;
     border-radius: 90%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 30px 10px rgb(204, 204, 204);
-    transform: translate(0px, 0px);
+    
+}
+
+.item1 {
     animation-name: fallItems;
     animation-duration: 10s;
+    animation-timing-function: 10s;
     animation-iteration-count: infinite;
 }
-.item:hover {
+.item1:hover {
     animation-play-state:paused;
 }
 
 .item2 {
-    transform: translate(0px, -200px);
+    transform: translate(90px);
     animation-name: fallItems2;
-    animation-duration: 12s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-timing-function: 10s;
     
 }
 .item2:hover {
@@ -44,9 +63,10 @@
 }
 
 .item3 {
-    transform: translate(0px, -100px);
+    transform: translate(-90px);
     animation-name: fallItems3;
-    animation-duration: 13s;
+    animation-duration: 10s;
+    animation-timing-function: 10s;
     animation-iteration-count: infinite;
     
 }
@@ -73,6 +93,13 @@
 }
 .col3:hover {
     background-color: rgb(217, 255, 0);
+}
+
+.col4 {
+    background-color: rgb(255, 255, 255);
+}
+.col4:hover {
+    background-color: aqua;
 }
 
 .colOne {
@@ -126,24 +153,24 @@
         transform: translate(0px, 0px);
     }
     to {
-        transform: translate(0px, 1200px);
+        transform: translate(300px, 500px);
     }
 }
 
 @keyframes fallItems2 {
     from {
-        transform: translate(0px, -1000px);
+        transform: translate(90px);
     }
     to {
-        transform: translate(0px, 400px);
+        transform: translate(-50px, 400px);
     }
 }
 
 @keyframes fallItems3 {
     from {
-        transform: translate(0px, -2000px);
+        transform: translate(-90px);
     }
     to {
-        transform: translate(0px, 100px);
+        transform: translate(10px, 320px);
     }
 }
